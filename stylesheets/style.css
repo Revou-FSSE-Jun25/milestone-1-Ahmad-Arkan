@@ -1,0 +1,513 @@
+@font-face {
+    font-family: Bytesized;
+    src: url(/fonts/Bytesized.ttf);
+}
+
+@font-face {
+    font-family: Tiny5;
+    src: url(/fonts/Tiny5.ttf);
+}
+
+@font-face {
+    font-family: Jersey15;
+    src: url(/fonts/Jersey15.ttf);
+}
+
+@font-face {
+    font-family: PixelifySans;
+    src: url(/fonts/PixelifySans.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jersey15;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/background.png);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section {
+    padding: 1%;
+    border-bottom: #0000AA88 solid 0.1vw;
+    border-top: #0000AA88 solid 0.1vw;
+}
+
+h1 {font-size: 5vw;}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/* Header */
+.header {
+    z-index: 1000;
+    position: fixed;
+    top: 2vw;
+    left: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    width: 5vw;
+    height: 5vw;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.header > span {
+    margin-left: 2vw;
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+    font-family: Bytesized;
+    font-size: 5vw;
+    line-height: 1;
+    color: #FFF;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+    cursor: pointer;
+}
+
+
+
+/* Anchor */
+.anchor {
+    width: 1vw;
+    height: 10vw;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 42.5vh;
+    right: 1vw;
+}
+
+.anchor > a {
+    width: 1vw;
+    height: 1vw;
+    text-decoration: none;
+    background-color: #0000AA88;
+}
+
+
+
+/* Section 1 */
+.sec1 {
+    width: 98%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+}
+
+.sec1 > .div1 {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.sec1 > .div1 > img {
+    width: 20vw;
+    height: 20vw;
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec1 > .div1 > h1 {
+    height: 6.7vw;
+    font-size: 6vw;
+    font-weight: lighter;
+    margin-left: 2.5vw;
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+    color: #FFF;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec1 > .div1 > a {
+    width: 6.7vw;
+    height: 6.7vw;
+    margin-left: 2.5vw;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec1 > .div1 > a > img {
+    padding: 0.4vw;
+    width: 90%;
+    height: 90%;
+}
+
+.sec1 > .div2 {
+    width: 100%;
+    margin-top: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.sec1 > .div2 > a {
+    width: 6.7vw;
+    height: 6.7vw;
+    margin-left: 26vw;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec1 > .div2 > a > img {
+    padding: 0.4vw;
+    width: 90%;
+    height: 90%;
+}
+
+.sec1 > .div2 > h2 {
+    line-height: 2.2;
+    height: 6.7vw;
+    font-size: 3vw;
+    font-weight: lighter;
+    margin-left: 2.5vw;
+    padding-left: 2.5vw;
+    padding-right: 6.4vw;
+    color: #FFF;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+
+
+/* Section 2 */
+.sec2 {
+    width: 98%;
+    height: 97vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+}
+
+.sec2-text {
+    width: 50vw;
+    height: 20vw;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec2-text > h1 {
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec2-text > p {
+    font-size: 2vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec2-side {
+    width: 20vw;
+    height: 20vw;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec2-side > h2 {
+    margin: 1%;
+}
+
+.sec2-side > ul {
+    margin: 1%;
+}
+
+
+
+/* Section 3 */
+.sec3 {
+    width: 98%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+}
+
+.sec3 > h1 {
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec3-projects {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 25vw;
+    height: 25vw;
+    margin: 1.5vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project > div > img {
+    width: 25vw;
+    height: 14vw;
+    object-fit: cover;
+}
+
+.project > div > h2 {
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #FFF;
+    margin-top: 1vw;
+}
+
+.project > div > p {
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: #FFF;
+    margin-top: 0.5vw;
+}
+
+.project > a {
+    background-color: blue;
+    width: 100%;
+    height: 3vw;
+}
+
+.project > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Section 4 */
+.sec4 {
+    width: 98%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0055FFAA;
+    backdrop-filter: blur(20px);
+}
+
+.sec4 > h1 {
+    font-weight: lighter;
+    font-size: 5vw;
+    color: #FFF;
+    margin: 1vw;
+}
+
+.sec4-contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec4-contact {
+    width: 35vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec4-contact > h2 {
+    font-weight: lighter;
+    font-size: 3vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec4-contact > ul > li > h3 {
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec4-contact > ul > li > h4 {
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: #000;
+    margin: 1vw;
+    margin-bottom: 3vw;
+}
+
+.sec4-form {
+    width: 35vw;
+    height: 30vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7FC3FFAA;
+    backdrop-filter: blur(20px);
+    box-shadow: #00000055 5px 5px 5px;
+}
+
+.sec4-form > h2 {
+    font-weight: lighter;
+    font-size: 3vw;
+    color: #000;
+    margin: 1vw;
+}
+
+.sec4-form > form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec4-form > form > label {
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #000;
+    margin: 0.5vw;
+    margin-top: 1vw;
+}
+
+.sec4-form > form > div > div > label {
+    font-weight: lighter;
+    font-size: 2vw;
+    color: #000;
+    margin: 0.5vw;
+}
+
+.sec4-form > form > textarea {
+    width: 29.5vw;
+    height: 8vw;
+    margin-right: 0.5vw;
+    padding: 0.8vw;
+    font-size: 1.5vw;
+    color: #FFF;
+    background-color: #0000FF;
+    border: none;
+}
+
+.sec4-form > form > div > div > input {
+    width: 14vw;
+    height: 2vw;
+    margin-right: 1.15vw;
+    padding-left: 0.8vw;
+    font-size: 1.5vw;
+    color: #FFF;
+    background-color: #0000FF;
+    border: none;
+}
+
+.sec4-form > form > textarea:focus {
+    outline: none;
+}
+
+.sec4-form > form > div > div > input:focus {
+    outline: none;
+}
+
+.sec4-form > form > textarea:is(:-webkit-autofill, :autofill) {
+    -webkit-text-fill-color: #0000FF;
+}
+
+.sec4-form > form > div > div > input:is(:-webkit-autofill, :autofill) {
+    -webkit-text-fill-color: #0000FF;
+}
+
+.sec4-form > form > button {
+    margin-top: 1.5vw;
+    height: 3vw;
+    background-color: #0000FF;
+}
+
+.sec4-form > form > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec4-form > form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 75vh;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #0000AA88;
+    color: #FFF;
+}
+
+footer > p {
+    font-size: 1.5vw;
+    margin: 0.5vw;
+}
+
+footer > ul > li > a {
+    font-size: 1.5vw;
+    margin: 0.5vw;
+    list-style: none;
+    color: #FFF;
+}
