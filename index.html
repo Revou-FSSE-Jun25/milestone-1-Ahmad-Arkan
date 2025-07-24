@@ -3,132 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='Hi, my name is Muhammad Arkan or usually called Ahmad Arkan (alias Ahmadrka). I love learning new thinks and imagine "how the world works".'>
+    <meta name="keywords" content="Muhammad, Ahmad, Arkan, Ahmadrka, Portofolio, Personal, Webpage">
+    <meta name="author" content="Muhammad Arkan">
+
+    <meta property="og:title" content="Ahmad Arkan &bullet; Software Engineer and Editor">
+    <meta property="og:description" content='Hi, my name is Muhammad Arkan or usually called Ahmad Arkan (alias Ahmadrka). I love learning new thinks and imagine "how the world works".'>
+    <meta property="og:image:secure_url" content="https://ahmadrka.com/images/weblen.webp">
+    <meta property="og:url" content="https://ahmadrka.com">
+    <meta property="og:type" content="website">
+
+    <title>Ahmad Arkan &bullet; Software Engineer and Editor</title>
+    <link rel="canonical" href="https://ahmadrka.com/">
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
-    <title>Muhammad Arkan - Software Engineer</title>
+    <link rel="icon" href="icons/favicon.svg" type="image/x-icon">
+    <script src="./scripts/script.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){emailjs.init({publicKey: "9M4TvNg0dKtu6jP1Y",});})();</script>
 </head>
 <body>
-    <header id="header" class="header">
-        <button id="menu" class="menu"><img src="icon/menu.svg" alt="Menu"></button>
-        <span>Ahmadrka</span>
-    </header>
-    <main id="main" class="main">
-        <div class="anchor">
-            <a href="#sec1"></a>
-            <a href="#sec2"></a>
-            <a href="#sec3"></a>
-            <a href="#sec4"></a>
+    <header class="home" id="home">
+        <div class="home-text">
+            <div>
+                <h1>hi, here is ahmadrka</h1>
+                <h2>Design the dream<br>Build the concept<br>Animate the world</h2>
+                <h3>Fullstack Developer, 3D Artist, Editor</h3>
+            </div>
+            <div>
+
+            </div>
         </div>
-        <section id="sec1" class="sec1">
-            <div class="div1">
-                <img src="images/profile.jpg" alt="Profile Picture">
-                <h1>Muhammad Arkan</h1>
-                <a href="https://github.com/Ahmad-Arkan" target="_blank"><img src="icon/github.svg" alt="Github"></a>
+        <img src="images/weblen.webp" class="home-image" alt="Render Project">
+    </header>
+
+    <menu class="menu hide" id="menu">
+        <div class="menu-header">
+            <button title="Close Menu" class="menuButton">
+                <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="196.409" y="96" width="1000" height="142" rx="64" transform="rotate(45 196.409 96)" fill="var(--content-color)"/>
+                    <rect x="96" y="803.107" width="1000" height="143" rx="64" transform="rotate(-45 96 803.107)" fill="var(--content-color)"/>
+                </svg>
+            </button>
+            <button title="View Resume" onclick="dev()" id="#resume">
+                <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_9_18)">
+                        <rect y="858" width="1000" height="142" rx="64" fill="var(--content-color)"/>
+                        <rect x="233.116" y="311.696" width="500" height="143" rx="71.5" transform="rotate(45 233.116 311.696)" fill="var(--content-color)"/>
+                        <rect x="867.974" y="412.116" width="500" height="143" rx="71.5" transform="rotate(135 867.974 412.116)" fill="var(--content-color)"/>
+                        <rect y="1000" width="256" height="143" rx="64" transform="rotate(-90 0 1000)" fill="var(--content-color)"/>
+                        <rect x="857" y="1000" width="256" height="143" rx="64" transform="rotate(-90 857 1000)" fill="var(--content-color)"/>
+                        <rect x="571" width="744" height="143" rx="64" transform="rotate(90 571 0)" fill="var(--content-color)"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_9_18">
+                            <rect width="1000" height="1000" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <button title="Change Theme" id="theme-toggle" onclick="toggle()">
+                <svg class="light1" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="842" y="158" width="684" height="684" rx="342" transform="rotate(90 842 158)" stroke="var(--content-color)" stroke-width="143" stroke-linecap="round" stroke-dasharray="1 213"/>
+                    <rect x="725" y="275" width="450" height="450" rx="225" transform="rotate(90 725 275)" fill="var(--content-color)"/>
+                </svg>
+                <svg class="dark1 hidden" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M567.844 164.73C724.226 196.203 842 334.347 842 500C842 688.881 688.881 842 500 842C334.347 842 196.203 724.226 164.73 567.844C205.375 588.411 251.334 600 300 600C465.685 600 600 465.685 600 300C600 251.334 588.411 205.375 567.844 164.73Z" fill="var(--content-color)"/>
+                </svg>
+            </button>
+        </div>
+        <ul class="menu-list menuButton">
+            <li><button><a href="#home"><span>Home Section</span></a></button></li>
+            <li><button><a href="#about"><span>About Ahmadrka</span></a></button></li>
+            <li><button><a href="#expertise"><span>Expertise and Skill</span></a></button></li>
+            <li><button><a href="#projects"><span>Featured Projects</span></a></button></li>
+            <li><button><a href="#contact"><span>Contact Me</span></a></button></li>
+            <li><button><a href="#contact-form"><span>Send a Message</span></a></button></li>
+            <li><button><a href="#footer"><span>Footer</span></a></button></li>
+        </ul>
+        <div>
+            <button title="Github" class="a-hide">
+                <a href="https://github.com/Ahmad-Arkan" target="_blank">
+                Github
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="zoom: 1.2;">
+                        <path d="M12.5 17.5C12.5 17.5 12.5 15.6083 12.5 15C12.5 14.475 12.625 13.3667 12.0833 12.9167C13.2417 12.8083 14.15 12.4333 15 11.6667C15.85 10.9 16.25 9.74167 16.25 7.91667C16.25 6.66667 16.0417 5.83333 15.4167 5C15.6583 4.35 15.7 3.33333 15.4167 2.5C14.1167 2.5 12.9417 3.39167 12.5 3.75C12.175 3.66667 11.3917 3.33333 10 3.33333C8.60833 3.33333 7.825 3.66667 7.5 3.75C7.05833 3.39167 5.88333 2.5 4.58333 2.5C4.3 3.33333 4.34167 4.35 4.58333 5C3.95833 5.83333 3.75 6.66667 3.75 7.91667C3.75 9.74167 4.15 10.9 5 11.6667C5.85 12.4333 6.75833 12.8083 7.91667 12.9167C7.375 13.3667 7.5 14.475 7.5 15C7.5 15.6083 7.5 17.5 7.5 17.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.5 15.8333C6.325 15.8333 5.13333 15.3666 4.425 14.8416C3.725 14.3166 3.51667 13.4583 2.5 12.9166" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </button>
+            <button title="Linkedin" class="a-hide">
+                <a href="https://linkedin.com/in/muhammad-arkan-1129b7353" target="_blank">
+                Linkedin
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="zoom: 1.2;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4251 7.33V8.74417C10.7213 8.29306 11.1295 7.92658 11.6098 7.68059C12.0901 7.4346 12.626 7.31753 13.1651 7.34083C16.0443 7.34083 16.6668 9.14083 16.6668 11.4825V16.25H14.0001V12.0233C14.0001 11.015 13.7968 9.71833 12.2268 9.71833C10.7043 9.71833 10.4443 10.8158 10.4443 11.9483V16.25H7.78597V7.33H10.4251ZM6.00014 5.08833C5.99981 5.3525 5.9215 5.6107 5.77504 5.83054C5.62857 6.05039 5.42046 6.22211 5.1768 6.32417C4.93324 6.4254 4.66507 6.45188 4.40641 6.40024C4.14776 6.3486 3.91031 6.22117 3.7243 6.03417C3.53794 5.84705 3.41106 5.60901 3.35963 5.34997C3.30819 5.09094 3.3345 4.82248 3.43523 4.57836C3.53596 4.33423 3.70662 4.12534 3.92576 3.97795C4.14489 3.83056 4.40272 3.75125 4.6668 3.75C4.84232 3.75 5.01611 3.78465 5.17821 3.85197C5.3403 3.91929 5.48751 4.01795 5.61138 4.14229C5.73526 4.26663 5.83337 4.41421 5.90008 4.57655C5.96679 4.7389 6.00079 4.91282 6.00014 5.08833Z" fill="var(--content-color)"/>
+                        <path d="M5.99992 7.34082H3.33325V16.25H5.99992V7.34082Z" fill="var(--content-color)"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </menu>
+    <div class="overlay menuButton hide" id="overlay"></div>
+
+    <main>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-left">
+                <button title="Open Menu" class="menuButton">
+                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="429" width="1000" height="143" rx="64" fill="var(--content-color)"/>
+                        <rect y="772" width="1000" height="142" rx="64" fill="var(--content-color)"/>
+                        <rect y="86" width="1000" height="143" rx="64" fill="var(--content-color)"/>
+                    </svg>
+                </button>
+                <button onclick="dev()" title="View Resume">
+                    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9_18)">
+                            <rect y="858" width="1000" height="142" rx="64" fill="var(--content-color)"/>
+                            <rect x="233.116" y="311.696" width="500" height="143" rx="71.5" transform="rotate(45 233.116 311.696)" fill="var(--content-color)"/>
+                            <rect x="867.974" y="412.116" width="500" height="143" rx="71.5" transform="rotate(135 867.974 412.116)" fill="var(--content-color)"/>
+                            <rect y="1000" width="256" height="143" rx="64" transform="rotate(-90 0 1000)" fill="var(--content-color)"/>
+                            <rect x="857" y="1000" width="256" height="143" rx="64" transform="rotate(-90 857 1000)" fill="var(--content-color)"/>
+                            <rect x="571" width="744" height="143" rx="64" transform="rotate(90 571 0)" fill="var(--content-color)"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_9_18">
+                                <rect width="1000" height="1000" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <button title="Change Theme" id="theme-toggle" onclick="toggle()">
+                    <svg class="light" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="842" y="158" width="684" height="684" rx="342" transform="rotate(90 842 158)" stroke="var(--content-color)" stroke-width="143" stroke-linecap="round" stroke-dasharray="1 213"/>
+                        <rect x="725" y="275" width="450" height="450" rx="225" transform="rotate(90 725 275)" fill="var(--content-color)"/>
+                    </svg>
+                    <svg class="dark hidden" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M567.844 164.73C724.226 196.203 842 334.347 842 500C842 688.881 688.881 842 500 842C334.347 842 196.203 724.226 164.73 567.844C205.375 588.411 251.334 600 300 600C465.685 600 600 465.685 600 300C600 251.334 588.411 205.375 567.844 164.73Z" fill="var(--content-color)"/>
+                    </svg>
+                </button>
             </div>
-            <div class="div2">
-                <a href="https://linkedin.com/in/muhammad-arkan-1129b7353" target="_blank"><img src="icon/linkedin.svg" alt="Linkedin"></a>
-                <h2>Front End Developer, Editor, 3D Artist</h2>
+            <button class="navbar-title"><a href="#home" class="title">ahmadrka</a></button>
+            <div class="navbar-right">
+                <button title="Github" class="a-hide">
+                    <a href="https://github.com/Ahmad-Arkan" target="_blank">
+                    Github
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="zoom: 1.2;">
+                            <path d="M12.5 17.5C12.5 17.5 12.5 15.6083 12.5 15C12.5 14.475 12.625 13.3667 12.0833 12.9167C13.2417 12.8083 14.15 12.4333 15 11.6667C15.85 10.9 16.25 9.74167 16.25 7.91667C16.25 6.66667 16.0417 5.83333 15.4167 5C15.6583 4.35 15.7 3.33333 15.4167 2.5C14.1167 2.5 12.9417 3.39167 12.5 3.75C12.175 3.66667 11.3917 3.33333 10 3.33333C8.60833 3.33333 7.825 3.66667 7.5 3.75C7.05833 3.39167 5.88333 2.5 4.58333 2.5C4.3 3.33333 4.34167 4.35 4.58333 5C3.95833 5.83333 3.75 6.66667 3.75 7.91667C3.75 9.74167 4.15 10.9 5 11.6667C5.85 12.4333 6.75833 12.8083 7.91667 12.9167C7.375 13.3667 7.5 14.475 7.5 15C7.5 15.6083 7.5 17.5 7.5 17.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5 15.8333C6.325 15.8333 5.13333 15.3666 4.425 14.8416C3.725 14.3166 3.51667 13.4583 2.5 12.9166" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </button>
+                <button title="Linkedin" class="a-hide">
+                    <a href="https://linkedin.com/in/muhammad-arkan-1129b7353" target="_blank">
+                    Linkedin
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="zoom: 1.2;">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4251 7.33V8.74417C10.7213 8.29306 11.1295 7.92658 11.6098 7.68059C12.0901 7.4346 12.626 7.31753 13.1651 7.34083C16.0443 7.34083 16.6668 9.14083 16.6668 11.4825V16.25H14.0001V12.0233C14.0001 11.015 13.7968 9.71833 12.2268 9.71833C10.7043 9.71833 10.4443 10.8158 10.4443 11.9483V16.25H7.78597V7.33H10.4251ZM6.00014 5.08833C5.99981 5.3525 5.9215 5.6107 5.77504 5.83054C5.62857 6.05039 5.42046 6.22211 5.1768 6.32417C4.93324 6.4254 4.66507 6.45188 4.40641 6.40024C4.14776 6.3486 3.91031 6.22117 3.7243 6.03417C3.53794 5.84705 3.41106 5.60901 3.35963 5.34997C3.30819 5.09094 3.3345 4.82248 3.43523 4.57836C3.53596 4.33423 3.70662 4.12534 3.92576 3.97795C4.14489 3.83056 4.40272 3.75125 4.6668 3.75C4.84232 3.75 5.01611 3.78465 5.17821 3.85197C5.3403 3.91929 5.48751 4.01795 5.61138 4.14229C5.73526 4.26663 5.83337 4.41421 5.90008 4.57655C5.96679 4.7389 6.00079 4.91282 6.00014 5.08833Z" fill="var(--content-color)"/>
+                            <path d="M5.99992 7.34082H3.33325V16.25H5.99992V7.34082Z" fill="var(--content-color)"/>
+                        </svg>
+                    </a>
+                </button>
+                <button title="Contact" style="background-color: var(--button-color)" class="box a-hide">
+                    <a href="#contact">
+                        Contact
+                        <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="954.669" y="500.116" width="500" height="143" rx="71.5" transform="rotate(135 954.669 500.116)" fill="var(--content-color)"/>
+                            <rect x="601.116" y="146" width="500" height="143" rx="71.5" transform="rotate(45 601.116 146)" fill="var(--content-color)"/>
+                            <rect x="128" y="428" width="744" height="143" rx="64" fill="var(--content-color)"/>
+                        </svg>
+                    </a>
+                </button>
+        </nav>
+
+        <section class="about" id="about">
+            <div class="about-text">
+                <h1>About Ahmadrka</h1>
+                <div class="about-paragraph">
+                    <img src="images/profile.webp" alt="Profile Photo">
+                    <div>
+                        <p>Hi, my name is Muhammad Arkan or usually called Ahmad Arkan (alias Ahmadrka). I love learning new thinks and imagine "how the world works".</p>
+                        <p>Over the years, I've learned many computer languages like Python, JavaScript, C++, etc. I've also studied editing, animation, and VFX. I also work as a designer and UX-UI engineer.</p>
+                    </div>
+                </div>
+                <button class="about-status box">
+                    <a href="#contact">
+                        <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="1000" height="1000" fill="var(--button-color)"/>
+                            <rect x="616.412" y="515.296" width="407.026" height="143" rx="64" transform="rotate(45 616.412 515.296)" fill="var(--content-color)"/>
+                            <path d="M464.813 796.327C439.82 771.334 439.82 730.811 464.813 705.818L684.818 485.814C709.811 460.82 750.334 460.82 775.327 485.814L785.934 496.42C810.927 521.414 810.927 561.936 785.934 586.93L565.93 806.934C540.936 831.928 500.414 831.928 475.42 806.934L464.813 796.327Z" fill="var(--content-color)"/>
+                            <rect x="736" y="696" width="293" height="193" rx="89" transform="rotate(-90 736 696)" fill="var(--content-color)" stroke="var(--button-color)" stroke-width="50"/>
+                            <path d="M151.861 141.255C176.855 116.261 217.377 116.261 242.371 141.255L486.032 384.916L384.916 486.032L141.255 242.371C116.261 217.378 116.261 176.855 141.255 151.861L151.861 141.255Z" fill="var(--content-color)"/>
+                            <rect x="60.6447" y="803.107" width="1050" height="193" rx="89" transform="rotate(-45 60.6447 803.107)" fill="var(--content-color)" stroke="var(--button-color)" stroke-width="50"/>
+                            <rect x="607.231" y="73.1147" width="456.236" height="143" rx="64" transform="rotate(45 607.231 73.1147)" fill="var(--content-color)"/>
+                            <rect x="314" y="71" width="226" height="193" rx="89" fill="var(--content-color)" stroke="var(--button-color)" stroke-width="50"/>
+                            <rect x="339" y="96" width="324" height="143" rx="64" fill="var(--content-color)"/>
+                            <rect x="761" y="671" width="324" height="143" rx="64" transform="rotate(-90 761 671)" fill="var(--content-color)"/>
+                        </svg>
+                        <h2>Looking for worker? Now available for hire.</h2>
+                        <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="954.669" y="500.116" width="500" height="143" rx="71.5" transform="rotate(135 954.669 500.116)" fill="var(--content-color)"/>
+                            <rect x="601.116" y="146" width="500" height="143" rx="71.5" transform="rotate(45 601.116 146)" fill="var(--content-color)"/>
+                            <rect x="128" y="428" width="744" height="143" rx="64" fill="var(--content-color)"/>
+                        </svg>
+                    </a>
+                </button>
             </div>
-        </section>
-        <section id="sec2" class="sec2">
-            <div id="sec2-text" class="sec2-text">
-                <h1>About Me</h1>
-                <p>Hello, I'm Ahmad, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I love coding and enjoy learning new technologies.</p>
-            </div>
-            <aside id="sec2-side" class="sec2-side">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javacript</li>
-                    <li>Node.js</li>
-                    <li>Blender</li>
-                    <li>Davinci Resolve</li>
-                    <li>Three.js</li>
-                    <li></li>
-                </ul>
+            <aside class="about-expertise" id="expertise">
+                <h2>Expertise and Skill</h2>
+                <div class="expertise-list">
+                    <button class="expertise-item box">
+                        <a href="https://www.google.com/search?q=html5" target="_blank">
+                            <img src="icons/html.webp" alt="Logo">
+                            <h3>HTML5</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://www.google.com/search?q=css3" target="_blank">
+                            <img src="icons/css.webp" alt="Logo">
+                            <h3>CSS3</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://javascript.com" target="_blank">
+                            <img src="icons/javascript.webp" alt="Logo">
+                            <h3>Javascript</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://typescriptlang.org/" target="_blank">
+                            <img src="icons/typescript.webp" alt="Logo">
+                            <h3>Typescript</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://nodejs.org" target="_blank">
+                            <img src="icons/nodejs.webp" alt="Logo">
+                            <h3>Node.js</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://react.dev" target="_blank">
+                            <img src="icons/react.webp" alt="Logo">
+                            <h3>React</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://nextjs.org" target="_blank">
+                            <img src="icons/nextjs.webp" alt="Logo">
+                            <h3>Next.js</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://threejs.org" target="_blank">
+                            <img src="icons/threejs.webp" alt="Logo">
+                            <h3>Three.js</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://tailwindcss.com" target="_blank">
+                            <img src="icons/tailwindcss.webp" alt="Logo">
+                            <h3>Tailwind</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://mysql.com" target="_blank">
+                            <img src="icons/mysql.webp" alt="Logo">
+                            <h3>MySQL</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://docker.com" target="_blank">
+                            <img src="icons/docker.webp" alt="Logo">
+                            <h3>Docker</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://git-scm.com" target="_blank">
+                            <img src="icons/git.webp" alt="Logo">
+                            <h3>Git</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://python.org" target="_blank">
+                            <img src="icons/python.webp" alt="Logo">
+                            <h3>Python</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://blender.org" target="_blank">
+                            <img src="icons/blender.webp" alt="Logo">
+                            <h3>Blender</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://blockbench.net" target="_blank">
+                            <img src="icons/blockbench.webp" alt="Logo">
+                            <h3>Blockbench</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://figma.com" target="_blank">
+                            <img src="icons/figma.webp" alt="Logo">
+                            <h3>Figma</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://capcut.com" target="_blank">
+                            <img src="icons/capcut.webp" alt="Logo">
+                            <h3>Capcut</h3>
+                        </a>
+                    </button>
+                    <button class="expertise-item box">
+                        <a href="https://www.blackmagicdesign.com/products/davinciresolve" target="_blank">
+                            <img src="icons/davinciresolve.webp" alt="Logo">
+                            <h3>DvnciRslve</h3>
+                        </a>
+                    </button>
+                </div>
             </aside>
         </section>
-        <section id="sec3" class="sec3">
-            <h1>Projects</h1>
-            <div id="sec3-projects" class="sec3-projects">
+        
+        <section class="projects" id="projects">
+            <h1>Featured Projects</h1>
+            <div class="projects-list">
                 <div class="project">
-                    <div>
-                        <img src="images/project1.png" alt="Project 1">
-                        <h2>Ahmadrka Webpage</h2>
-                        <p>Official personal webpage project Ahmadrka.</p>
+                    <div class="project-item">
+                        <img src="./images/project3.webp" alt="Project1">
+                        <h2>New Ahmadrka Webpage</h2>
+                        <h3>Fresh and modern personal webpage for the latest project.</h3>
                     </div>
-                    <a href=""><img src="icon/arrow.svg" alt="Open -->"></a>
+                    <div class="project-buttons">
+                        <button><a href="https://ahmadrka.com/">More Detail</a></button>
+                        <button title="Source Code">
+                            <a href="https://github.com/Ahmad-Arkan" class="a-hide">
+                                Source Code
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 17.5C12.5 17.5 12.5 15.6083 12.5 15C12.5 14.475 12.625 13.3667 12.0833 12.9167C13.2417 12.8083 14.15 12.4333 15 11.6667C15.85 10.9 16.25 9.74167 16.25 7.91667C16.25 6.66667 16.0417 5.83333 15.4167 5C15.6583 4.35 15.7 3.33333 15.4167 2.5C14.1167 2.5 12.9417 3.39167 12.5 3.75C12.175 3.66667 11.3917 3.33333 10 3.33333C8.60833 3.33333 7.825 3.66667 7.5 3.75C7.05833 3.39167 5.88333 2.5 4.58333 2.5C4.3 3.33333 4.34167 4.35 4.58333 5C3.95833 5.83333 3.75 6.66667 3.75 7.91667C3.75 9.74167 4.15 10.9 5 11.6667C5.85 12.4333 6.75833 12.8083 7.91667 12.9167C7.375 13.3667 7.5 14.475 7.5 15C7.5 15.6083 7.5 17.5 7.5 17.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 15.8333C6.325 15.8333 5.13333 15.3666 4.425 14.8416C3.725 14.3166 3.51667 13.4583 2.5 12.9166" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div class="project">
-                    <div>
-                        <img src="images/project2.png" alt="Project 1">
-                        <h2>Profile Ahmad</h2>
-                        <p>First Ahmadrka personal webpage project.</p>
+                    <div class="project-item">
+                        <img src="./images/project2.webp" alt="Project1">
+                        <h2>Old Ahmadrka Webpage</h2>
+                        <h3>The older one but with minor feature and some feature failures.</h3>
                     </div>
-                    <a href=""><img src="icon/arrow.svg" alt="Open -->"></a>
+                    <div class="project-buttons">
+                        <button><a href="https://ahmadrka.com/">More Detail</a></button>
+                        <button title="Source Code">
+                            <a href="https://github.com/Ahmad-Arkan" class="a-hide">
+                                Source Code
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 17.5C12.5 17.5 12.5 15.6083 12.5 15C12.5 14.475 12.625 13.3667 12.0833 12.9167C13.2417 12.8083 14.15 12.4333 15 11.6667C15.85 10.9 16.25 9.74167 16.25 7.91667C16.25 6.66667 16.0417 5.83333 15.4167 5C15.6583 4.35 15.7 3.33333 15.4167 2.5C14.1167 2.5 12.9417 3.39167 12.5 3.75C12.175 3.66667 11.3917 3.33333 10 3.33333C8.60833 3.33333 7.825 3.66667 7.5 3.75C7.05833 3.39167 5.88333 2.5 4.58333 2.5C4.3 3.33333 4.34167 4.35 4.58333 5C3.95833 5.83333 3.75 6.66667 3.75 7.91667C3.75 9.74167 4.15 10.9 5 11.6667C5.85 12.4333 6.75833 12.8083 7.91667 12.9167C7.375 13.3667 7.5 14.475 7.5 15C7.5 15.6083 7.5 17.5 7.5 17.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 15.8333C6.325 15.8333 5.13333 15.3666 4.425 14.8416C3.725 14.3166 3.51667 13.4583 2.5 12.9166" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
                 </div>
                 <div class="project">
-                    <div>
-                        <img src="images/project2.png" alt="Project 1">
-                        <h2>Ahmadrka Webpage</h2>
-                        <p>Official personal webpage project Ahmadrka.</p>
+                    <div class="project-item">
+                        <img src="./images/project1.webp" alt="Project1">
+                        <h2>First Ahmadrka Webpage</h2>
+                        <h3>First Ahmadrka personal webpage with complicated code and feature.</h3>
                     </div>
-                    <a href=""><img src="icon/arrow.svg" alt="Open -->"></a>
+                    <div class="project-buttons">
+                        <button><a href="https://ahmadrka.com/">More Detail</a></button>
+                        <button title="Source Code">
+                            <a href="https://github.com/Ahmad-Arkan" class="a-hide">
+                                Source Code
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5 17.5C12.5 17.5 12.5 15.6083 12.5 15C12.5 14.475 12.625 13.3667 12.0833 12.9167C13.2417 12.8083 14.15 12.4333 15 11.6667C15.85 10.9 16.25 9.74167 16.25 7.91667C16.25 6.66667 16.0417 5.83333 15.4167 5C15.6583 4.35 15.7 3.33333 15.4167 2.5C14.1167 2.5 12.9417 3.39167 12.5 3.75C12.175 3.66667 11.3917 3.33333 10 3.33333C8.60833 3.33333 7.825 3.66667 7.5 3.75C7.05833 3.39167 5.88333 2.5 4.58333 2.5C4.3 3.33333 4.34167 4.35 4.58333 5C3.95833 5.83333 3.75 6.66667 3.75 7.91667C3.75 9.74167 4.15 10.9 5 11.6667C5.85 12.4333 6.75833 12.8083 7.91667 12.9167C7.375 13.3667 7.5 14.475 7.5 15C7.5 15.6083 7.5 17.5 7.5 17.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 15.8333C6.325 15.8333 5.13333 15.3666 4.425 14.8416C3.725 14.3166 3.51667 13.4583 2.5 12.9166" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="sec4" class="sec4">
-            <h1>Get in Touch</h1>
-            <div id="sec4-contact-form" class="sec4-contact-form">
-                <aside id="sec4-contact" class="sec4-contact">
-                    <h2>Contact Me</h2>
-                    <ul>
-                        <li>
-                            <h3>Email</h3>
-                            <h4>arlpenik02@gmail.com</h4>
-                        </li>
-                        <li>
-                            <h3>Telephone</h3>
-                            <h4>+62 821-3327-5485</h4>
-                        </li>
-                        <li>
-                            <h3>Address</h3>
-                            <h4>Edelweis Baru, Mojolaban, Sukoharjo, Jawa Tengah</h4>
-                    </ul>
-                </aside>
-                <aside id="sec4-form" class="sec4-form">
-                    <h2>Send a Message</h2>
-                    <form action="" method="get" id="form" class="form">
+
+        <section class="contact" id="contact">
+            <h1>Let's Connect</h1>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <div class="upper">
+                        <button class="box">
+                            <a href="https://youtube.com/@windbridge" target="_blank" class="upper-item">
+                                <img src="images/youtube.webp" alt="Youtube">
+                                <div>
+                                    <h2>Youtube</h2>
+                                    <h3>Wind Bridge</h3>
+                                </div>
+                                
+                            </a>
+                        </button>
+                        <button class="box">
+                            <a href="https://instagram.com/ahmad.rka" target="_blank" class="upper-item">
+                                <img src="images/instagram.webp" alt="Instagram">
+                                <div>
+                                    <h2>Instagram</h2>
+                                    <h3>Ahmadrka</h3>
+                                </div>
+                            </a>
+                        </button>
+                        <button class="box">
+                            <a href="https://wa.me/6282133275485?text=Hi,%20Ahmadrka%0ALet's%20work%20together" target="_blank" class="upper-item">
+                                <img src="images/whatsapp.webp" alt="Whatsapp">
+                                <div>
+                                    <h2>Whatsapp</h2>
+                                    <h3>Alexchin</h3>
+                                </div>
+                            </a>
+                        </button>
+                    </div>
+                    <button class="box">
+                        <a href="mailto:arlpenik02@gmail.com" class="lower-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5H20C20.55 5 21 5.45 21 6V18C21 18.55 20.55 19 20 19H4C3.45 19 3 18.55 3 18V6C3 5.45 3.45 5 4 5Z" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 6.5L12 12L21 6.5" stroke="var(--content-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div class="lower-item-text">
+                                <h2>Email</h2>
+                                <h3>arlpenik02@gmail.com</h3>
+                            </div>
+                        </a>
+                    </button>
+                    <button class="box">
+                        <a href="tel:6282133275485" class="lower-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7464 20.1952L12.7375 20.1968L12.6796 20.2253L12.6633 20.2286L12.6519 20.2253L12.594 20.1968C12.5853 20.1941 12.5788 20.1954 12.5744 20.2009L12.5712 20.209L12.5573 20.558L12.5614 20.5743L12.5695 20.5849L12.6543 20.6452L12.6665 20.6484L12.6763 20.6452L12.7611 20.5849L12.7709 20.5718L12.7741 20.558L12.7603 20.2098C12.7581 20.2012 12.7535 20.1963 12.7464 20.1952ZM12.9625 20.1031L12.9519 20.1047L12.801 20.1805L12.7929 20.1887L12.7904 20.1976L12.8051 20.5482L12.8092 20.558L12.8157 20.5637L12.9796 20.6395C12.9899 20.6422 12.9978 20.64 13.0032 20.633L13.0065 20.6215L12.9788 20.121C12.976 20.1112 12.9706 20.1052 12.9625 20.1031ZM12.3796 20.1047C12.376 20.1025 12.3717 20.1018 12.3676 20.1027C12.3635 20.1036 12.3599 20.1061 12.3576 20.1096L12.3527 20.121L12.325 20.6215C12.3255 20.6313 12.3301 20.6378 12.3388 20.6411L12.351 20.6395L12.5149 20.5637L12.5231 20.5571L12.5263 20.5482L12.5402 20.1976L12.5377 20.1878L12.5296 20.1797L12.3796 20.1047Z" fill="var(--content-color)"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9739 19.278C14.7999 19.2348 11.473 18.775 7.98871 15.2916C4.50523 11.8073 4.04626 8.48115 4.00224 7.3064C3.93702 5.51616 5.30823 3.77728 6.89222 3.09819C7.08297 3.01582 7.29185 2.98447 7.49837 3.00719C7.70489 3.02991 7.90196 3.10594 8.07023 3.22781C9.3746 4.17837 10.2746 5.61643 11.0474 6.74716C11.2175 6.99558 11.2902 7.29788 11.2517 7.59646C11.2132 7.89504 11.0662 8.16902 10.8387 8.3662L9.24824 9.54747C9.17139 9.60296 9.1173 9.68445 9.09601 9.77681C9.07472 9.86917 9.08768 9.96612 9.13247 10.0496C9.4928 10.7043 10.1336 11.6793 10.8673 12.413C11.601 13.1467 12.6225 13.8299 13.3228 14.231C13.4106 14.2802 13.5139 14.294 13.6116 14.2695C13.7092 14.2449 13.7937 14.1839 13.8478 14.0989L14.8831 12.5231C15.0734 12.2702 15.3542 12.1008 15.6667 12.0504C15.9791 11.9999 16.299 12.0723 16.5592 12.2524C17.7062 13.0464 19.0448 13.931 20.0248 15.1856C20.1565 15.3551 20.2403 15.5569 20.2674 15.7698C20.2945 15.9828 20.2639 16.1991 20.1788 16.3962C19.4965 17.9884 17.7698 19.3441 15.9739 19.278Z" fill="var(--content-color)"/>
+                            </svg>
+                            <div class="lower-item-text">
+                                <h2>Telephone</h2>
+                                <h3>+62 821 3327 5485</h3>
+                            </div>
+                        </a>
+                    </button>
+                    <button class="box">
+                        <a href="https://maps.app.goo.gl/Htz5PCDXD6tQfszA9" target="_blank" class="lower-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 14C14.206 14 16 12.206 16 10C16 7.794 14.206 6 12 6C9.794 6 8 7.794 8 10C8 12.206 9.794 14 12 14ZM12 8C13.103 8 14 8.897 14 10C14 11.103 13.103 12 12 12C10.897 12 10 11.103 10 10C10 8.897 10.897 8 12 8Z" fill="var(--content-color)"/>
+                                <path d="M11.4201 21.814C11.5895 21.9346 11.7922 21.9994 12.0001 21.9994C12.208 21.9994 12.4107 21.9346 12.5801 21.814C12.8841 21.599 20.0291 16.44 20.0001 10C20.0001 5.589 16.4111 2 12.0001 2C7.58909 2 4.00009 5.589 4.00009 9.995C3.97109 16.44 11.1161 21.599 11.4201 21.814ZM12.0001 4C15.3091 4 18.0001 6.691 18.0001 10.005C18.0211 14.443 13.6121 18.428 12.0001 19.735C10.3891 18.427 5.97909 14.441 6.00009 10C6.00009 6.691 8.69109 4 12.0001 4Z" fill="var(--content-color)"/>
+                            </svg>
+                            <div class="lower-item-text">
+                                <h2>Address</h2>
+                                <h3>Sukoharjo, Jawa Tengah, Indonesia</h3>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+                <form class="contact-form" id="contact-form" method="dialog">
+                    <h2>Send Me a Message</h2>
+                    <div class="form-identity">
                         <div>
-                            <div>
-                                <label for="fname">Your Name</label>
-                            <input type="text" id="fname" name="fname" placeholder="Write Your Name Here" required>
-                            </div>
-                            <div>
-                                <label for="email">Your Email</label>
-                                <input type="email" id="email" name="email" placeholder="Write Your Email Here" required>
-                            </div>
-                            
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Write Your Message, Suggestion, Feedback or Any Greeting" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </aside>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button onclick="sendMail()" type="submit" class="box" id="submit">
+                        Send Now
+                        <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="954.669" y="500.116" width="500" height="143" rx="71.5" transform="rotate(135 954.669 500.116)" fill="var(--content-color)"/>
+                            <rect x="601.116" y="146" width="500" height="143" rx="71.5" transform="rotate(45 601.116 146)" fill="var(--content-color)"/>
+                            <rect x="128" y="428" width="744" height="143" rx="64" fill="var(--content-color)"/>
+                        </svg>
+                    </button>
+                </form>
+                <div class="form-done" id="form-done">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="var(--button-color)" stroke-width="1.5"/>
+                        <path d="M7.5 11.5L9.5 13.5L12 11L14.5 8.5" stroke="var(--button-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Your Message Has Been Sent</h2>
+                    <button onclick="sendAnother()" class="box">Send Another Message</button>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Personal Website &copyAhmadrka</p>
-        <p>Designed and Developed by Muhammad Arkan</p>
-        <p>All rights reserved &copy; 2025</p>
-        <ul>
-            <li><a href="https://wa.me/6281233275485">Whatsapp</a></li>
-            <li><a href="https://youtube.co/@windbridge">Youtube</a></li>
-            <li><a href="https://instagram.com/ahmad.rka">Instagram</a></li>
-            <li><a href="https://github.com/Ahmad-Arkan" target="_blank">Github</a></li>
-            <li><a href="https://linkedin.com/in/muhammad-arkan-1129b7353" target="_blank">Linkedin</a></li>
-        </ul>
+    <footer class="footer" id="footer">
+        <div class="footer-text">
+            <div class="footer-title">
+                <img src="icons/favicon.svg" alt="Icon">
+                <div class="footer-title-text">
+                    <h1>Ahmadrka Personal Webpage</h1>
+                    <h2>&copy; 2025 Made by Muhammad Arkan</h2>
+                </div>
+            </div>
+            <h3>Simple, modern and lightweight personal webpage, with high performance and accessibility, using pure HTML, CSS and Javascript.</h3>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li>Contact</li>
+                <li><a href="mailto:arlpenik02@gmail.com">Email</a></li>
+                <li><a href="tel:6282133275485">Telephone</a></li>
+                <li><a href="https://linkedin.com/in/muhammad-arkan-1129b7353">Linkedin</a></li>
+                <li><a href="https://wa.me/6282133275485?text=Hi,%20Ahmadrka%0ALet%27s%20work%20together">Whatsapp</a></li>
+            </ul>
+            <ul>
+                <li>Social</li>
+                <li><a href="https://youtube.com/@windbridge">Youtube</a></li>
+                <li><a href="https://instagram.com/ahmad.rka">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100078188769533">Facebook</a></li>
+            </ul>
+            <ul>
+                <li>Tech</li>
+                <li><a href="https://www.google.com/search?q=html5">HTML</a></li>
+                <li><a href="https://www.google.com/search?q=css3">CSS</a></li>
+                <li><a href="https://javascript.com/">Javascript</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
