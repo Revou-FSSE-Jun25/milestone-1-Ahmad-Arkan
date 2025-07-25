@@ -1,0 +1,70 @@
+[[redirects]]
+  from = "/youtube"
+  to = "https://youtube.com/@windbridge"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/yt"
+  to = "https://youtube.com/@windbridge"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/instagram"
+  to = "https://instagram.com/ahmad.rka"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ig"
+  to = "https://instagram.com/ahmad.rka"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/whatsapp"
+  to = "https://wa.me/6282133275485?text=Hi,%20Ahmadrka%0ALet%27s%20work%20together"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wa"
+  to = "https://wa.me/6282133275485?text=Hi,%20Ahmadrka%0ALet%27s%20work%20together"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/Ahmad-Arkan"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gh"
+  to = "https://github.com/Ahmad-Arkan"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/linkedin"
+  to = "https://linkedin.com/in/muhammad-arkan-1129b7353"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/in"
+  to = "https://linkedin.com/in/muhammad-arkan-1129b7353"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mc"
+  to = "https://launch.minecraft.net/profile/Ahmad%20Arkan2313"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/not-found.html"
+  status = 404

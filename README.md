@@ -61,6 +61,9 @@ Simple, modern and lightweight personal webpage, with high performance and acces
 - Button icon used embedded [svg tag](https://www.google.com/search?q=svg%20tag)
 - No 3rd party cookies
 
+### Other Features
+- Error 404 Page, see demo [here](https://ahmadrka.com/not-found.html)
+
 
 ## Assets
 ### Images

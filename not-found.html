@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 &bullet; Not Found</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="icon" href="/icons/favicon.svg" type="image/x-icon">
+    <script src="/scripts/script.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 767px) {
+        a {
+            font-size: 1.5vw;
+            text-align: center;
+        }
+
+        button {
+            height: 3vw;
+            background-color: var(--background-content);
+            backdrop-filter: var(--backdrop-content);
+            border-radius: var(--sub-border-radius);
+        }
+
+        button:hover {
+            background-color: var(--hover-color);
+            transition: background-color 0.2s;
+        }
+
+        .main {
+            background-color: var(--background-content);
+            backdrop-filter: var(--backdrop-content);
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            padding: 1.5vw;
+            text-align: center;
+        }
+        }
+        
+        @media only screen and (max-width: 767px) {
+        a {
+            font-size: 6vw;
+            text-align: center;
+        }
+
+        button {
+            height: 12vw;
+            background-color: var(--background-content);
+            backdrop-filter: var(--backdrop-content);
+            border-radius: var(--sub-border-radius);
+        }
+
+        button:active {
+            background-color: var(--hover-color);
+            transition: background-color 0.2s;
+        }  
+
+        .main {
+            background-color: var(--background-content);
+            backdrop-filter: var(--backdrop-content);
+            border-radius: var(--border-radius);
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            padding: 5%;
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <h1>404</h1>
+        <h2>Not Found</h2>
+        <h3>There is no page you are looking for</h3>
+        <button><a href="https://ahmadrka.com">Back To Homepage</a></button>
+    </main>
+</body>
+</html>
