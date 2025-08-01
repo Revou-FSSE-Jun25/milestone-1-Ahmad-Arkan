@@ -18,17 +18,16 @@
             align-items: center;
         }
 
-        @media only screen and (min-width: 767px) {
-        a {
-            font-size: 1.5vw;
-            text-align: center;
-        }
+        @media only screen and (min-width: 1001px) {
 
         button {
-            height: 3vw;
-            background-color: var(--background-content);
+            width: 100%;
+            background-color: var(--hover-color);
             backdrop-filter: var(--backdrop-content);
             border-radius: var(--sub-border-radius);
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
 
         button:hover {
@@ -42,23 +41,22 @@
             border-radius: var(--border-radius);
             display: flex;
             flex-direction: column;
-            gap: 1vw;
-            padding: 1.5vw;
+            gap: 1rem;
+            padding: 1rem;
             text-align: center;
         }
         }
         
-        @media only screen and (max-width: 767px) {
-        a {
-            font-size: 6vw;
-            text-align: center;
-        }
+        @media only screen and (max-width: 1000px) {
 
         button {
             height: 12vw;
-            background-color: var(--background-content);
+            background-color: var(--hover-color);
             backdrop-filter: var(--backdrop-content);
             border-radius: var(--sub-border-radius);
+            font-size: 6vw;
+            font-weight: bold;
+            text-align: center;
         }
 
         button:active {
@@ -82,9 +80,9 @@
 <body>
     <main class="main">
         <h1>404</h1>
-        <h2>Not Found</h2>
-        <h3>There is no page you are looking for</h3>
-        <button><a href="https://ahmadrka.com">Back To Homepage</a></button>
+        <h2>Page Not Found</h2>
+        <h3>There is no page you are looking for :(</h3>
+        <button onclick="history.back()">Previous Page</button>
     </main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
 
 /* Universal */
 h1 {
@@ -18,6 +18,27 @@ p {
     font-size: 5vw;
 }
 
+a {
+    width: 100%;
+    height: 100%;
+}
+
+select {
+    height: 12vw;
+    font-size: 6vw;
+    padding-left: 0.5vw;
+    border: none;
+    background-color: var(--hover-color);
+    backdrop-filter: var(--backdrop-content);
+    border-radius: var(--sub-border-radius);
+}
+
+select > option {
+    background-color: var(--hover-color);
+    backdrop-filter: var(--backdrop-content);
+    border-radius: var(--sub-border-radius);
+}
+
 button:active {
     background-color: var(--hover-color);
     transition: background-color 0.2s;
@@ -30,8 +51,30 @@ button:active {
 
 .menu.hide {
     opacity: 0;
-    transform: translateX(-100vw);
+    transform: translateX(-85vw);
     transition: transform 0.5s, opacity 0.5s 0.5s;
+}
+
+.notifications.hide {
+    opacity: 0;
+    transform: translateY(-20vw);
+    transition: transform 0.5s, opacity 0.5s 0.5s;
+}
+
+.notifications {
+    z-index: 100000;
+    top: 1%;
+    right: 1%;
+    left: 1%;
+    position: fixed;
+    padding: 2%;
+    font-size: 5vw;
+    text-align: center;
+    background-color: var(--error);
+    border-radius: var(--border-radius);
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.5s, opacity 0s;
 }
 
 label {
@@ -47,10 +90,10 @@ input, textarea {
 /* Menu Section*/
 .menu {
     z-index: 100000;
-    top: 2%;
-    left: 3%;
-    width: 80vw;
-    height: 95%;
+    top: 1%;
+    bottom: 1%;
+    left: 2%;
+    width: 82vw;
     padding: 2%;
     position: fixed;
     display: flex;
@@ -63,6 +106,8 @@ input, textarea {
     opacity: 1;
     transform: translateX(0);
     transition: transform 0.5s, opacity 0s;
+    overflow-y: auto;
+    scrollbar-width: none;
 }
 
 /* Menu Header */
@@ -118,6 +163,7 @@ input, textarea {
 }
 
 .menu-list li button {
+    width: 100%;
     height: 12vw;
     border-radius: var(--sub-border-radius);
 }
@@ -125,6 +171,11 @@ input, textarea {
 .menu div {
     display: flex;
     flex-direction: row;
+}
+
+.menu .themes, .menu .backgrounds, .menu .languages {
+    display: flex;
+    flex-direction: column;
 }
 
 .menu div button {
@@ -145,15 +196,151 @@ input, textarea {
     text-align: start;
 }
 
+/* Settings */
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.theme-switch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.theme-switch div {
+    width: 100%;
+    height: 12vw;
+}
+
+.theme-switch div input {
+    display: none;
+}
+
+.theme-switch div label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 3vw;
+    font-size: 5vw;
+    background-color: var(--hover-color);
+    backdrop-filter: var(--backdrop-content);
+    border-radius: var(--sub-border-radius);
+    cursor: pointer;
+}
+
+.theme-switch div input[type="radio"]:checked + label {
+    background-color: var(--button-color);
+}
+
+.background-switch {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.background-switch div {
+    width: 100%;
+    height: 12vw;
+    background-color: var(--hover-color);
+    backdrop-filter: var(--backdrop-content);
+    border-radius: var(--sub-border-radius);
+    cursor: pointer;
+}
+
+.background-switch div label {
+    width: 100%;
+    height: 100%;
+    font-size: 5vw;
+    padding-left: 3vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.background-switch div input {
+    display: none;
+}
+
+.background-switch button {
+    flex-basis: 30vw;
+}
+
+
+
+/* Resume File */
+.resume-file.hide {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.resume-file {
+    z-index: 1000000;
+    margin: 2%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.resume-file iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.resume-menu {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    background-color: var(--background-content);
+    backdrop-filter: var(--backdrop-content);
+    border-radius: var(--border-radius);
+}
+
+.resume-menu button {
+    width: 12vw;
+    height: 12vw;
+    border-radius: var(--sub-border-radius);
+}
+
+.resume-menu button svg {
+    width: 8vw;
+    height: 8vw;
+}
+
 
 
 /* Home Section */
 .home {
+    height: 90dvh;
+    min-height: 120vw;
+    max-height: 200vw;
     display: flex;
     flex-direction: column-reverse;
-    gap: 8vw;
+    gap: 5vw;
     align-items: center;
-    padding: 6vh 4%;
+    padding: 4% 4% 5vw 4%;
 }
 
 .home-text {
@@ -186,6 +373,7 @@ input, textarea {
 .home-image {
     width: 100%;
     height: 100%;
+    min-height: 11vh;
     object-fit: cover;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -201,7 +389,7 @@ input, textarea {
 .navbar {
     z-index: 1000;
     position: sticky;
-    top: 2%;
+    top: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -211,11 +399,12 @@ input, textarea {
     border-radius: var(--border-radius);
     margin: 0% 4%;
     padding: 2%;
-    transition: box-shadow 0.2s, margin 0.3s ease-in-out;
+    transition: box-shadow 0.2s, margin 0.3s, padding 0.3s;
 }
 
 .navbar.top{
     box-shadow: var(--hover-shadow);
+    margin: 0% 2%;
 }
 
 .navbar-left, .navbar-right {
@@ -255,18 +444,21 @@ input, textarea {
 /* About Section */
 .about {
     padding-top: 15vh;
+}
+
+.about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 5%;
-    gap: 8vw;
+    gap: 5vw;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 8vw;
+    gap: 5vw;
 }
 
 .about-paragraph {
@@ -292,7 +484,7 @@ input, textarea {
     flex-direction: column;
     justify-content: start;
     padding: 10%;
-    background-color: var(--button-color);
+    background-color: var(--background-content);
     backdrop-filter: var(--backdrop-content);
     border-radius: var(--border-radius);
 }
@@ -328,6 +520,7 @@ input, textarea {
 }
 
 .about-expertise h2 {
+    text-align: center;
     padding: 5%;
 }
 
@@ -382,7 +575,7 @@ input, textarea {
     margin-top: 5vw;
     display: flex;
     flex-direction: column;
-    gap: 8vw;
+    gap: 5vw;
 }
 
 .project {
@@ -433,11 +626,6 @@ input, textarea {
     width: 63vw;
 }
 
-.project .project-buttons svg {
-    width: 8vw;
-    height: 8vw;
-}
-
 
 
 /* Contact Section */
@@ -455,7 +643,7 @@ input, textarea {
 .contact .contact-content {
     display: flex;
     flex-direction: column;
-    gap: 4vw;
+    gap: 5vw;
     width: 100%;
     padding: 5%;
 }
@@ -463,16 +651,17 @@ input, textarea {
 .contact .contact-content .contact-text {
     display: flex;
     flex-direction: column;
-    gap: 4vw;
+    gap: 3vw;
 }
 
 .contact .contact-content .contact-text .upper {
     display: flex;
     flex-direction: column;
-    gap: 4vw;
+    gap: 3vw;
 }
 
 .contact .contact-content .contact-text .upper button .upper-item {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -492,6 +681,7 @@ input, textarea {
 }
 
 .contact .contact-content .contact-text button .lower-item {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -612,7 +802,7 @@ input, textarea {
 /* Footer */
 .footer {
     padding: 5%;
-    margin: 1.5vw;
+    margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
