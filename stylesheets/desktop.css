@@ -306,7 +306,6 @@ input, textarea {
     width: 100%;
     border-radius: var(--border-radius);
     border: none;
-    background-color: none;
 }
 
 .resume-menu {
@@ -788,34 +787,6 @@ input, textarea {
 
 .contact .contact-content .form-done button:hover {
     background-color: var(--button-color);
-}
-
-/* Screen Under 1200 */
-@media only screen and (max-width: 1300px)  {
-    .contact .contact-content {
-        flex-direction: column;
-    }
-
-    .contact .contact-content .form-done {
-        margin-left: 0;
-        margin-top: 33.2rem;
-    }
-
-    .about-container{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-    }
-    .about-paragraph {
-        height: max-content;
-        width: 90vw;
-    }
-    .about-expertise {
-        width: 90vw;
-    }
 }
 
 
